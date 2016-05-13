@@ -8,7 +8,7 @@ $(function () {
         restaurant: $('#restaurant-list').children('ul'),
         activity: $('#activity-list').children('ul')
     };
-
+    // console.log(hotels);
     var collections = {
         hotel: hotels,
         restaurant: restaurants,
@@ -100,10 +100,10 @@ $(function () {
         switchDay(1);
 
     });
-
-    fillInOptions(hotels, $('#hotel-choices'));
-    fillInOptions(restaurants, $('#restaurant-choices'));
-    fillInOptions(activities, $('#activity-choices'));
+    // console.log(hotels);
+    // fillInOptions(hotels, $('#hotel-choices'));
+    // fillInOptions(restaurants, $('#restaurant-choices'));
+    // fillInOptions(activities, $('#activity-choices'));
 
     /*
     --------------------------
@@ -131,11 +131,11 @@ $(function () {
 
     // End create element functions ----
 
-    function fillInOptions(collection, $selectElement) {
-        collection.forEach(function (item) {
-            $selectElement.append('<option value="' + item.id + '">' + item.name + '</option>');
-        });
-    }
+    // function fillInOptions(collection, $selectElement) {
+    //     collection.forEach(function (item) {
+    //         $selectElement.append('<option value="' + item.id + '">' + item.name + '</option>');
+    //     });
+    // }
 
     function switchDay(dayNum) {
         wipeDay();

@@ -9,7 +9,7 @@ $(function(){
 	.then(function(hotels){
 		hotels = hotels;
 		hotels.forEach(function(hotel){
-			$('#hotel-choices').append('<option data-type="hotel">' + hotel.name + '</option>')
+			$('#hotel-choices').append('<option data-type="hotel">' + hotel.name + '</option>');
 		});
 	})
 
